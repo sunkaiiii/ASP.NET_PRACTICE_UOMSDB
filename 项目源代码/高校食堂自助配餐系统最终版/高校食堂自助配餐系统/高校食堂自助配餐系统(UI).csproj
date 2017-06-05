@@ -59,6 +59,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="about_us.ascx" />
     <Content Include="Administrator\adminLogin.aspx" />
     <Content Include="Administrator\AdminManage.aspx" />
     <Content Include="buyer\evaluationOfProduct.aspx" />
@@ -182,6 +183,16 @@
     <Content Include="seller\Information.aspx" />
     <Content Include="seller\SellingPro.aspx" />
     <Content Include="seller\Timerprofit.aspx" />
+    <Content Include="using_help\about_us.aspx" />
+    <Content Include="using_help\connect_us.aspx" />
+    <Content Include="using_help\content\C_user_request.ascx" />
+    <Content Include="using_help\content\C_univers_problem.ascx" />
+    <Content Include="using_help\content\C_honest_report.ascx" />
+    <Content Include="using_help\content\C_connect_us.ascx" />
+    <Content Include="using_help\content\C_about_us.ascx" />
+    <Content Include="using_help\honest_report.aspx" />
+    <Content Include="using_help\univers_proplem.aspx" />
+    <Content Include="using_help\user_request.aspx" />
     <Content Include="菜品素材\半荤菜\农家小炒肉.jpg" />
     <Content Include="菜品素材\半荤菜\咸鱼茄子.jpg" />
     <Content Include="菜品素材\半荤菜\毛血旺.jpg" />
@@ -330,6 +341,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="about_us.ascx.cs">
+      <DependentUpon>about_us.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="about_us.ascx.designer.cs">
+      <DependentUpon>about_us.ascx</DependentUpon>
+    </Compile>
     <Compile Include="Administrator\adminLogin.aspx.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -712,6 +730,76 @@
     </Compile>
     <Compile Include="seller\Timerprofit.aspx.designer.cs">
       <DependentUpon>Timerprofit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\about_us.aspx.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\about_us.aspx.designer.cs">
+      <DependentUpon>about_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\connect_us.aspx.cs">
+      <DependentUpon>connect_us.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\connect_us.aspx.designer.cs">
+      <DependentUpon>connect_us.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\content\C_user_request.ascx.cs">
+      <DependentUpon>C_user_request.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\content\C_user_request.ascx.designer.cs">
+      <DependentUpon>C_user_request.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\content\C_univers_problem.ascx.cs">
+      <DependentUpon>C_univers_problem.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\content\C_univers_problem.ascx.designer.cs">
+      <DependentUpon>C_univers_problem.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\content\C_honest_report.ascx.cs">
+      <DependentUpon>C_honest_report.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\content\C_honest_report.ascx.designer.cs">
+      <DependentUpon>C_honest_report.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\content\C_connect_us.ascx.cs">
+      <DependentUpon>C_connect_us.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\content\C_connect_us.ascx.designer.cs">
+      <DependentUpon>C_connect_us.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\content\C_about_us.ascx.cs">
+      <DependentUpon>C_about_us.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\content\C_about_us.ascx.designer.cs">
+      <DependentUpon>C_about_us.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\honest_report.aspx.cs">
+      <DependentUpon>honest_report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\honest_report.aspx.designer.cs">
+      <DependentUpon>honest_report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\univers_proplem.aspx.cs">
+      <DependentUpon>univers_proplem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\univers_proplem.aspx.designer.cs">
+      <DependentUpon>univers_proplem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="using_help\user_request.aspx.cs">
+      <DependentUpon>user_request.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="using_help\user_request.aspx.designer.cs">
+      <DependentUpon>user_request.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
