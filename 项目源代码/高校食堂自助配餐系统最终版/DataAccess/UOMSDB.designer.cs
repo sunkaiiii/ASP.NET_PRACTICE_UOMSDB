@@ -29,37 +29,40 @@ namespace DataAccess
 		private static System.Data.Linq.Mapping.MappingSource mappingSource = new AttributeMappingSource();
 		
     #region 可扩展性方法定义
-    partial void OnCreated();
-    partial void Insertb_evaluate_T(b_evaluate_T instance);
-    partial void Updateb_evaluate_T(b_evaluate_T instance);
-    partial void Deleteb_evaluate_T(b_evaluate_T instance);
-    partial void Insertb_order_item_T(b_order_item_T instance);
-    partial void Updateb_order_item_T(b_order_item_T instance);
-    partial void Deleteb_order_item_T(b_order_item_T instance);
-    partial void Insertb_order_state_T(b_order_state_T instance);
-    partial void Updateb_order_state_T(b_order_state_T instance);
-    partial void Deleteb_order_state_T(b_order_state_T instance);
-    partial void Insertb_order_T(b_order_T instance);
-    partial void Updateb_order_T(b_order_T instance);
-    partial void Deleteb_order_T(b_order_T instance);
-    partial void Insertbuyer_T(buyer_T instance);
-    partial void Updatebuyer_T(buyer_T instance);
-    partial void Deletebuyer_T(buyer_T instance);
-    partial void Insertcart_T(cart_T instance);
-    partial void Updatecart_T(cart_T instance);
-    partial void Deletecart_T(cart_T instance);
-    partial void Insertproduct_T(product_T instance);
-    partial void Updateproduct_T(product_T instance);
-    partial void Deleteproduct_T(product_T instance);
-    partial void Inserts_order_item_T(s_order_item_T instance);
-    partial void Updates_order_item_T(s_order_item_T instance);
-    partial void Deletes_order_item_T(s_order_item_T instance);
-    partial void Inserts_order_T(s_order_T instance);
-    partial void Updates_order_T(s_order_T instance);
-    partial void Deletes_order_T(s_order_T instance);
-    partial void Insertseller_T(seller_T instance);
-    partial void Updateseller_T(seller_T instance);
-    partial void Deleteseller_T(seller_T instance);
+        partial void OnCreated();
+        partial void Insertb_evaluate_T(b_evaluate_T instance);
+        partial void Updateb_evaluate_T(b_evaluate_T instance);
+        partial void Deleteb_evaluate_T(b_evaluate_T instance);
+        partial void Insertb_order_item_T(b_order_item_T instance);
+        partial void Updateb_order_item_T(b_order_item_T instance);
+        partial void Deleteb_order_item_T(b_order_item_T instance);
+        partial void Insertb_order_state_T(b_order_state_T instance);
+        partial void Updateb_order_state_T(b_order_state_T instance);
+        partial void Deleteb_order_state_T(b_order_state_T instance);
+        partial void Insertb_order_T(b_order_T instance);
+        partial void Updateb_order_T(b_order_T instance);
+        partial void Deleteb_order_T(b_order_T instance);
+        partial void Insertbuyer_T(buyer_T instance);
+        partial void Updatebuyer_T(buyer_T instance);
+        partial void Deletebuyer_T(buyer_T instance);
+        partial void Insertcart_T(cart_T instance);
+        partial void Updatecart_T(cart_T instance);
+        partial void Deletecart_T(cart_T instance);
+        partial void Insertproduct_T(product_T instance);
+        partial void Updateproduct_T(product_T instance);
+        partial void Deleteproduct_T(product_T instance);
+        partial void Inserts_order_item_T(s_order_item_T instance);
+        partial void Updates_order_item_T(s_order_item_T instance);
+        partial void Deletes_order_item_T(s_order_item_T instance);
+        partial void Inserts_order_T(s_order_T instance);
+        partial void Updates_order_T(s_order_T instance);
+        partial void Deletes_order_T(s_order_T instance);
+        partial void Insertseller_T(seller_T instance);
+        partial void Updateseller_T(seller_T instance);
+        partial void Deleteseller_T(seller_T instance);
+        partial void InsertReportInfo_T(report_T instance);
+        partial void UpdateReportInfo_T(report_T instance);
+        partial void DeleteReportInfo_T(report_T instance);
     #endregion
 		
 		public UOMSDBDataContext() : 
@@ -171,6 +174,10 @@ namespace DataAccess
 				return this.GetTable<seller_T>();
 			}
 		}
+        public System.Data.Linq.Table<report_T> report_T
+        {
+            get { return this.GetTable<report_T>(); }
+        }
 	}
 	
 	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.b_evaluate_T")]
@@ -2040,5 +2047,113 @@ namespace DataAccess
 			}
 		}
 	}
+
+    [global::System.Data.Linq.Mapping.TableAttribute(Name ="dbo.report_info")]
+    public partial class report_T : INotifyPropertyChanging, INotifyPropertyChanged
+    {
+        private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+
+        private string _s_account;
+
+        private string _p_name;
+
+        private string _report;
+
+        #region 可扩展性方法定义
+        partial void OnLoaded();
+        partial void OnValidate(System.Data.Linq.ChangeAction action);
+        partial void OnCreated();
+        partial void Ons_accountChanging(string value);
+        partial void Ons_accountChanged();
+        partial void Onp_pNameChanged(string value);
+        partial void Onp_pNameChanged();
+        partial void OnreportChanging(string value);
+        partial void OnreportChanged();
+        #endregion
+
+        public report_T()
+        {
+            OnCreated();
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_p_name", DbType = "VarChar(20) NOT NULL", CanBeNull = false, IsPrimaryKey = true)]
+        public string s_account
+        {
+            get
+            {
+                return this._s_account;
+            }
+            set
+            {
+                if ((this._s_account != value))
+                {
+                    this.Ons_accountChanging(value);
+                    this.SendPropertyChanging();
+                    this._s_account = value;
+                    this.SendPropertyChanged("s_account");
+                    this.Ons_accountChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_s_password", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        public string p_name
+        {
+            get
+            {
+                return this._p_name;
+            }
+            set
+            {
+                if ((this._p_name != value))
+                {
+                    this.Onp_pNameChanged(value);
+                    this.SendPropertyChanging();
+                    this._p_name = value;
+                    this.SendPropertyChanged("s_password");
+                    this.Onp_pNameChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_report", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        public string report
+        {
+            get
+            {
+                return this._report;
+            }
+            set
+            {
+                if ((this._report != value))
+                {
+                    this.OnreportChanging(value);
+                    this.SendPropertyChanging();
+                    this._report = value;
+                    this.SendPropertyChanged("s_storeName");
+                    this.OnreportChanged();
+                }
+            }
+        }
+        public event PropertyChangingEventHandler PropertyChanging;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void SendPropertyChanging()
+        {
+            if ((this.PropertyChanging != null))
+            {
+                this.PropertyChanging(this, emptyChangingEventArgs);
+            }
+        }
+
+        protected virtual void SendPropertyChanged(String propertyName)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
 }
 #pragma warning restore 1591

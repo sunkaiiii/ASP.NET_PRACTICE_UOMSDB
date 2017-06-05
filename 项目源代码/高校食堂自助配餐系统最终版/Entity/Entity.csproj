@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -68,6 +69,7 @@
     <Compile Include="MessagesBox.cs" />
     <Compile Include="product_Entity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="report_Entity.cs" />
     <Compile Include="seller_Entity.cs" />
     <Compile Include="s_order_Entity.cs" />
     <Compile Include="s_order_item_Entity.cs" />

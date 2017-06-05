@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using DataAccess;
+using Entity;
 
 namespace 高校食堂自助配餐系统.control_buyer
 {
@@ -30,7 +31,8 @@ namespace 高校食堂自助配餐系统.control_buyer
 
         protected void Button2_Click(object sender, EventArgs e)
         {
-          
+            Response.Write(MessagesBox.showMessages("添加成功"));
+            System.Web.Security.FormsAuthentication.RedirectFromLoginPage(Session["UserAccount"].ToString(), true);
         }
 
         protected void DataList1_ItemCommand(object source, DataListCommandEventArgs e)

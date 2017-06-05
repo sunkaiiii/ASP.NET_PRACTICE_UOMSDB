@@ -102,4 +102,12 @@
       <Column Name="s_profit" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
+  <Table Name="dbo.report_info" Member="report_info">
+    <Type Name="report_info">
+      <Column Name="Id" Type="System.int" DbType="int NOT NULL" IsPrimaryKey="true" CanBeNull="false"/>
+      <Column Name="s_account" Type="System.String" DbType="Varchar(20) NOT NULL" CanBeNull="false"/>
+      <Column Name="p_name" Type="System.String" DbType="Varchar(500) NOT NULL " CanBeNull="false"/>
+      <Column Name="report" Type="System.String" DbType="Varchar(500) NOT NULL" CanBeNull="false"/>
+    </Type>
+  </Table>
 </Database>
