@@ -1,6 +1,7 @@
 ﻿using DataAccess;
 using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data;
 using System.Data.SqlClient;
 using System.Linq;
@@ -37,7 +38,8 @@ namespace 高校食堂自助配餐系统.Control_buyer
             {
                 selectStr = "select * from product_T where p_category ='" + Request.QueryString["category"].ToString() + "'";
             }
-            string str = "Data Source=.;Initial Catalog=UOMSDB;Integrated Security=True";
+            //string str = "Data Source=.;Initial Catalog=UOMSDB;Integrated Security=True";
+            String str= ConfigurationManager.ConnectionStrings["UOMSDBConnectionString"].ConnectionString;
             SqlConnection con = new SqlConnection(str);
             pds.AllowPaging = true;
             pds.PageSize = 20;

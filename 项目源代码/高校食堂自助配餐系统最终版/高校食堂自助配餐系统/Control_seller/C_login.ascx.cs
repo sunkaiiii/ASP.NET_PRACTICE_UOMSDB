@@ -81,5 +81,10 @@ namespace 高校食堂自助配餐系统.Control_seller
                 Response.Write(MessagesBox.showMessages("请先选择用户角色!"));
             }
         }
+
+        protected void login_btn_regist_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("register.aspx");
+        }
     }
 }

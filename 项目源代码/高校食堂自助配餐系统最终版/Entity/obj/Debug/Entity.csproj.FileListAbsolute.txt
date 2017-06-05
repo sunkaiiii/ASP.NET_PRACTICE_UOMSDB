@@ -93,3 +93,8 @@ E:\ASP.NET资料\实训\项目源代码\高校食堂自助配餐系统最终版\
 E:\ASP.NET资料\实训\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.pdb
 E:\ASP.NET资料\实训\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.dll
 E:\ASP.NET资料\实训\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.pdb

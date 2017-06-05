@@ -64,6 +64,8 @@
                 </ContentTemplate>
             </asp:UpdatePanel>
             <asp:Button ID="btnLanding" runat="server" OnClick="Button1_Click" Text="登录" CssClass="btn btn-primary" Width="206px" />
+            &nbsp;&nbsp;&nbsp;
+            <asp:Button ID="login_btn_regist" runat="server" OnClick="login_btn_regist_Click" Text="注册" CssClass="btn btn-primary" Width="206px" />
             <br />
         </div>
     </div>

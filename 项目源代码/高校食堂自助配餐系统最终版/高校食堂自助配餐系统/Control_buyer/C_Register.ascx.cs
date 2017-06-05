@@ -27,6 +27,10 @@ namespace 高校食堂自助配餐系统.control_buyer
             if (!b)
             {
                 Response.Write(MessagesBox.showMessages("注册成功"));
+                Session["UserAccount"] = txtSell_Account.Text.Trim();
+                Session["UserPassword"] = txtSell_password.Text.Trim();
+                Session["Logged"] = true;
+                Session["UserType"] = "0";             
                 Response.Redirect("~/Default.aspx");
             }
 

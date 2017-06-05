@@ -29,8 +29,13 @@ namespace 高校食堂自助配餐系统.Control_seller
             a.S_answer = txtSell_answer.Text;
             if (!db.exist(txtSell_Account.Text))
             {
+                Session["UserAccount"] = a.S_account.Trim();
+                Session["UserPassword"] = a.S_password.Trim();
+                Session["Logged"] = true;
+                Session["UserType"] = "0";
                 db.create(a);
                 Response.Write(MessagesBox.showMessages("注册成功"));
+                System.Web.Security.FormsAuthentication.RedirectFromLoginPage(a.S_account, true);
             }
             else
             {
