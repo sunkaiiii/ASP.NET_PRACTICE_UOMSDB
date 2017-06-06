@@ -537,5 +537,14 @@ namespace DataAccess
             return true;
         }
 
+        public bool sendFeedback(feedback_Entity feedT)
+        {
+            feedback_T a = new feedback_T();
+            a.account = feedT.account;
+            a.report = feedT.reportInfo;
+            sellDB.feedBack_T.InsertOnSubmit(a);
+            sellDB.SubmitChanges();
+            return true;
+        }
     }
 }

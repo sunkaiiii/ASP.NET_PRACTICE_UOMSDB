@@ -63,5 +63,15 @@ namespace InterService
         {
             return adminDataTask.searchSOrderByOrderId(OrderId);
         }
+
+        public object searhUserFeedBack(String account)
+        {
+            return adminDataTask.searchUserFeedBack(account);
+        }
+
+        public object searchUserReport(String account)
+        {
+            return adminDataTask.searchUserReport(account);
+        }
     }
 }

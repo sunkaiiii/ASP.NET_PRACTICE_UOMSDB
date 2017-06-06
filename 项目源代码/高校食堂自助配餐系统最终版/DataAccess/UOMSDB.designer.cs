@@ -63,9 +63,12 @@ namespace DataAccess
         partial void InsertReportInfo_T(report_T instance);
         partial void UpdateReportInfo_T(report_T instance);
         partial void DeleteReportInfo_T(report_T instance);
-    #endregion
-		
-		public UOMSDBDataContext() : 
+        partial void InsertFeedBack_T(feedback_T instance);
+        partial void UpdateFeedBack_T(feedback_T instance);
+        partial void DeleteFeedBack_T(feedback_T instance);
+        #endregion
+
+        public UOMSDBDataContext() : 
 				base(global::System.Configuration.ConfigurationManager.ConnectionStrings["UOMSDBConnectionString"].ConnectionString, mappingSource)
 		{
 			OnCreated();
@@ -177,6 +180,10 @@ namespace DataAccess
         public System.Data.Linq.Table<report_T> report_T
         {
             get { return this.GetTable<report_T>(); }
+        }
+        public System.Data.Linq.Table<feedback_T> feedBack_T
+        {
+            get { return this.GetTable<feedback_T>(); }
         }
 	}
 	
@@ -2076,7 +2083,7 @@ namespace DataAccess
             OnCreated();
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_p_name", DbType = "VarChar(20) NOT NULL", CanBeNull = false, IsPrimaryKey = true)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_s_account", DbType = "VarChar(20) NOT NULL", CanBeNull = false, IsPrimaryKey = true)]
         public string s_account
         {
             get
@@ -2096,7 +2103,7 @@ namespace DataAccess
             }
         }
 
-        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_s_password", DbType = "VarChar(20) NOT NULL", CanBeNull = false)]
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_p_name", DbType = "VarChar(500) NOT NULL", CanBeNull = false)]
         public string p_name
         {
             get
@@ -2110,7 +2117,7 @@ namespace DataAccess
                     this.Onp_pNameChanged(value);
                     this.SendPropertyChanging();
                     this._p_name = value;
-                    this.SendPropertyChanged("s_password");
+                    this.SendPropertyChanged("p_name");
                     this.Onp_pNameChanged();
                 }
             }
@@ -2130,7 +2137,91 @@ namespace DataAccess
                     this.OnreportChanging(value);
                     this.SendPropertyChanging();
                     this._report = value;
-                    this.SendPropertyChanged("s_storeName");
+                    this.SendPropertyChanged("_report");
+                    this.OnreportChanged();
+                }
+            }
+        }
+        public event PropertyChangingEventHandler PropertyChanging;
+
+        public event PropertyChangedEventHandler PropertyChanged;
+
+        protected virtual void SendPropertyChanging()
+        {
+            if ((this.PropertyChanging != null))
+            {
+                this.PropertyChanging(this, emptyChangingEventArgs);
+            }
+        }
+
+        protected virtual void SendPropertyChanged(String propertyName)
+        {
+            if ((this.PropertyChanged != null))
+            {
+                this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
+            }
+        }
+    }
+
+    [global::System.Data.Linq.Mapping.TableAttribute(Name = "dbo.feedback")]
+    public partial class feedback_T
+    {
+        private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+
+        private string _account;
+        private string _report;
+
+        #region 可扩展性方法定义
+        partial void OnLoaded();
+        partial void OnValidate(System.Data.Linq.ChangeAction action);
+        partial void OnCreated();
+        partial void Ons_accountChanging(string value);
+        partial void Ons_accountChanged();
+        partial void OnreportChanging(string value);
+        partial void OnreportChanged();
+        #endregion
+
+        public feedback_T()
+        {
+            OnCreated();
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_account", DbType = "VarChar(20) NOT NULL", CanBeNull = false, IsPrimaryKey = true)]
+        public string account
+        {
+            get
+            {
+                return this._account;
+            }
+            set
+            {
+                if ((this._account != value))
+                {
+                    this.Ons_accountChanging(value);
+                    this.SendPropertyChanging();
+                    this._account = value;
+                    this.SendPropertyChanged("account");
+                    this.Ons_accountChanged();
+                }
+            }
+        }
+
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_report", DbType = "VarChar(500) NOT NULL", CanBeNull = false)]
+        public string report
+        {
+            get
+            {
+                return this._report;
+            }
+            set
+            {
+                if ((this._report != value))
+                {
+                    this.OnreportChanging(value);
+                    this.SendPropertyChanging();
+                    this._report = value;
+                    this.SendPropertyChanged("_report");
                     this.OnreportChanged();
                 }
             }

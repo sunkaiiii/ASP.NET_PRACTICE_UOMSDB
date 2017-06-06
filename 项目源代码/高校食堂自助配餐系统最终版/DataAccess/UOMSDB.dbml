@@ -110,4 +110,11 @@
       <Column Name="report" Type="System.String" DbType="Varchar(500) NOT NULL" CanBeNull="false"/>
     </Type>
   </Table>
+  <Table Name="dbo.feedback" Member="feedback">
+    <Type Name="feedback">
+      <Column Name="id" Type="System.int" DbType="int NOT NULL" IsPrimaryKey="true" CanBeNull="false"/>
+      <Column Name="account" Type="System.String" DbType="varchar(20) NOT NULL" CanBeNull="false"/>
+      <Column Name="report" Type="System.String" DbType="varchar(500) NOT NULL" CanBeNull="false"/>
+    </Type>
+  </Table>
 </Database>

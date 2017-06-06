@@ -10,7 +10,24 @@
 namespace 高校食堂自助配餐系统.using_help.content {
     
     
-    public partial class C_user_request
-    {
+    public partial class C_user_request {
+        
+        /// <summary>
+        /// txtFeedBack 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox txtFeedBack;
+        
+        /// <summary>
+        /// btnSendFeedBack 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSendFeedBack;
     }
 }

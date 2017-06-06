@@ -11,5 +11,13 @@ namespace 高校食堂自助配餐系统.seller {
     
     
     public partial class login {
+        
+        /// <summary>
+        /// u_honest_report 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
     }
 }

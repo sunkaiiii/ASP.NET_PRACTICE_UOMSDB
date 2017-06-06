@@ -63,5 +63,33 @@ namespace DataAccess
                          };
             return result;
         }
+        
+        public object searchUserFeedBack(String account)
+        {
+            if (account == null)
+            {
+                var result = sellDB.feedBack_T.Select(c => c);
+                return result;
+            }
+            else
+            {
+                var result = sellDB.feedBack_T.Select(c => c.account.Equals(account));
+                return result;
+            }
+        }
+
+        public object searchUserReport(String sellName)
+        {
+            if (sellName == null)
+            {
+                var result = sellDB.report_T.Select(c => c);
+                return result;
+            }
+            else
+            {
+                var result = sellDB.report_T.Select(c => c.s_account.Equals(sellName));
+                return result;
+            }
+        }
     }
 }

@@ -65,6 +65,7 @@
     <Compile Include="b_order_item_Entity.cs" />
     <Compile Include="b_order_state_Entity.cs" />
     <Compile Include="cart_Entity.cs" />
+    <Compile Include="feedback_Entity.cs" />
     <Compile Include="GenerateRandomCode.cs" />
     <Compile Include="MessagesBox.cs" />
     <Compile Include="product_Entity.cs" />
