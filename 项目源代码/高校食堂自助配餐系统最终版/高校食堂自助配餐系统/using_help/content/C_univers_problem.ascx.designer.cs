@@ -10,7 +10,6 @@
 namespace 高校食堂自助配餐系统.using_help.content {
     
     
-    public partial class C_univers_problem
-    {
+    public partial class C_univers_problem {
     }
 }
