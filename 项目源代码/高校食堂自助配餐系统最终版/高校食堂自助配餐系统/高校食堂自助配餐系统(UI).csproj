@@ -39,6 +39,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -179,9 +183,11 @@
     <Content Include="js\jquery.banner.revolution.min.js" />
     <Content Include="Logout.aspx" />
     <Content Include="ProductDetail.aspx" />
+    <Content Include="R_ShoppingCar.ascx" />
     <Content Include="seller\Information.aspx" />
     <Content Include="seller\SellingPro.aspx" />
     <Content Include="seller\Timerprofit.aspx" />
+    <Content Include="test.aspx" />
     <Content Include="菜品素材\半荤菜\农家小炒肉.jpg" />
     <Content Include="菜品素材\半荤菜\咸鱼茄子.jpg" />
     <Content Include="菜品素材\半荤菜\毛血旺.jpg" />
@@ -643,6 +649,13 @@
       <DependentUpon>ProductDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R_ShoppingCar.ascx.cs">
+      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="R_ShoppingCar.ascx.designer.cs">
+      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
+    </Compile>
     <Compile Include="seller\Add_goods.aspx.cs">
       <DependentUpon>Add_goods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -712,6 +725,13 @@
     </Compile>
     <Compile Include="seller\Timerprofit.aspx.designer.cs">
       <DependentUpon>Timerprofit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="test.aspx.cs">
+      <DependentUpon>test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="test.aspx.designer.cs">
+      <DependentUpon>test.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

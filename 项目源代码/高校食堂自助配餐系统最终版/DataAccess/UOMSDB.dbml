@@ -57,6 +57,7 @@
       <Column Name="p_name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="p_price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
       <Column Name="p_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p_photo" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.product_T" Member="product_T">

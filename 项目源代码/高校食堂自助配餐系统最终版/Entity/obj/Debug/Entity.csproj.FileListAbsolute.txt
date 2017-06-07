@@ -98,3 +98,13 @@ D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.dll
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.pdb
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.dll
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.pdb
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.dll
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.pdb
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_xx\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.dll
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_xx\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.pdb
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_xx\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.csprojResolveAssemblyReference.cache
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_xx\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.dll
+C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_xx\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Debug\Entity.pdb
