@@ -170,5 +170,25 @@ namespace 高校食堂自助配餐系统.Control_buyer
         {
             Response.Redirect("default.aspx?category=" + LinkButton7.Text + "");
         }
+
+        protected void Button_car_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_car_Disposed(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_car_Click1(object sender, EventArgs e)
+        {
+          //  this.PopupControlExtender1.Commit(this.)
+        }
+
+        protected void DataList_shopping_car_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+
+        }
     }
 }

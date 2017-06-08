@@ -1068,6 +1068,8 @@ namespace DataAccess
 		private decimal _p_price;
 		
 		private int _p_num;
+
+        private string _p_photo;
 		
     #region 可扩展性方法定义
     partial void OnLoaded();
@@ -1087,9 +1089,12 @@ namespace DataAccess
     partial void Onp_priceChanged();
     partial void Onp_numChanging(int value);
     partial void Onp_numChanged();
-    #endregion
-		
-		public cart_T()
+    partial void Onp_photoChanging(string value);
+    partial void Onp_photoChanged();
+
+        #endregion
+
+        public cart_T()
 		{
 			OnCreated();
 		}
@@ -1113,8 +1118,28 @@ namespace DataAccess
 				}
 			}
 		}
-		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_s_account", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage = "_p_photo", DbType = "VarChar(200) NOT NULL", CanBeNull = false)]
+        public string p_photo
+        {
+            get
+            {
+                return this._p_photo;
+            }
+            set
+            {
+                if ((this._p_photo != value))
+                {
+                    this.Onp_photoChanging(value);
+                    this.SendPropertyChanging();
+                    this._p_photo = value;
+                    this.SendPropertyChanged("p_photo");
+                    this.Onp_photoChanged();
+                }
+            }
+        }
+
+        [global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_s_account", DbType="VarChar(20) NOT NULL", CanBeNull=false)]
 		public string s_account
 		{
 			get
