@@ -39,10 +39,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="AjaxControlToolkit, Version=4.1.60501.0, Culture=neutral, PublicKeyToken=28f01b0e84b6d53e, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\AjaxControlToolkit.Binary.NET4\AjaxControlToolkit.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Web.DynamicData" />
@@ -183,11 +179,9 @@
     <Content Include="js\jquery.banner.revolution.min.js" />
     <Content Include="Logout.aspx" />
     <Content Include="ProductDetail.aspx" />
-    <Content Include="R_ShoppingCar.ascx" />
     <Content Include="seller\Information.aspx" />
     <Content Include="seller\SellingPro.aspx" />
     <Content Include="seller\Timerprofit.aspx" />
- HEAD
     <Content Include="using_help\about_us.aspx" />
     <Content Include="using_help\connect_us.aspx" />
     <Content Include="using_help\content\C_user_request.ascx" />
@@ -199,9 +193,6 @@
     <Content Include="using_help\honest_report.aspx" />
     <Content Include="using_help\univers_problem.aspx" />
     <Content Include="using_help\user_request.aspx" />
-=======
-    <Content Include="test.aspx" />
->>>>>>> zhouXX
     <Content Include="菜品素材\半荤菜\农家小炒肉.jpg" />
     <Content Include="菜品素材\半荤菜\咸鱼茄子.jpg" />
     <Content Include="菜品素材\半荤菜\毛血旺.jpg" />
@@ -663,13 +654,6 @@
       <DependentUpon>ProductDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="R_ShoppingCar.ascx.cs">
-      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="R_ShoppingCar.ascx.designer.cs">
-      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
-    </Compile>
     <Compile Include="seller\Add_goods.aspx.cs">
       <DependentUpon>Add_goods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -740,7 +724,6 @@
     <Compile Include="seller\Timerprofit.aspx.designer.cs">
       <DependentUpon>Timerprofit.aspx</DependentUpon>
     </Compile>
- HEAD
     <Compile Include="using_help\about_us.aspx.cs">
       <DependentUpon>about_us.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -859,11 +842,4 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
-  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-       Other similar extension points exist, see Microsoft.Common.targets.
-  <Target Name="BeforeBuild">
-  </Target>
-  <Target Name="AfterBuild">
-  </Target>
-  -->
 </Project>
