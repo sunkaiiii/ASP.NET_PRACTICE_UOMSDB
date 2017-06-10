@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="UOMSDBConnectionString-Web.config Connection String" description="UOMSDBConnectionString 由应用程序在 web.config 中用来访问数据库的连接字符串。" defaultValue="Data Source=ZWJ-WINDOWS-201;Initial Catalog=btbuDinner;Persist Security Info=True;User ID=sa;Password=eh.GIGABYTE.820" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="D:\\文件与资料\\文档\\GitHub\\ASP\.NET_PRACTICE_UOMSDB\\项目源代码\\高校食堂自助配餐系统最终版\\高校食堂自助配餐系统\\obj\\Debug\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='UOMSDBConnectionString']/@connectionString" />
+  </parameter>
+</parameters>
