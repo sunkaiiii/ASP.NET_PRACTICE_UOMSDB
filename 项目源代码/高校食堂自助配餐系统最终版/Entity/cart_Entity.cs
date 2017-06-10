@@ -14,6 +14,7 @@ namespace Entity
         private string p_name;//商品名称
         private double p_price;//商品价格
         private int p_num;//商品数量
+        private string p_photo;
         public string B_account
         {
             get { return b_account; }
@@ -44,6 +45,12 @@ namespace Entity
             get { return p_price; }
             set { p_price = value; }
         }
+        public string P_photo
+        {
+            get { return p_photo; }
+            set { p_photo = value; }
+        }
+
         public int P_num
         {
             get { return p_num; }

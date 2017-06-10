@@ -233,6 +233,10 @@ namespace DataAccess
                     Cart.p_price = r.p_price;
                     Cart.p_Id = r.p_Id;
                     Cart.p_num = ProNum;
+                    Cart.p_photo = r.p_photo;
+                   
+                   
+                    
                     buyerDB.cart_T.InsertOnSubmit(Cart);
                     buyerDB.SubmitChanges();
                 }
@@ -286,6 +290,7 @@ namespace DataAccess
                     c.p_name = cart.P_name;
                     c.p_price = (decimal)cart.P_price;
                     c.p_num = cart.P_num;
+                    c.p_photo = cart.P_photo;
                 }
                 buyerDB.SubmitChanges();
             }

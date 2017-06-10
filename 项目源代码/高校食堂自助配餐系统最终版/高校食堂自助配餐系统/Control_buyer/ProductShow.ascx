@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="ProductShow.ascx.cs" Inherits="高校食堂自助配餐系统.Control_buyer.ProductShow" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="asp" %>
 <header>
 
     <link href="../css/style.css" rel="stylesheet" type="text/css" media="screen" />
@@ -20,6 +21,10 @@
 
         .MakeLinkCenter {
             margin-right: 21%;
+        }
+        .auto-style15 {
+            padding: 15px;
+            text-align: center;
         }
     </style>
 </header>
@@ -46,11 +51,22 @@
             </ul>
         </div>
 
+        <div style="float: right; margin-top: 20px; margin-right: 5%;" class="text-right" id ="div_car">
+            <asp:Button ID="Button_car" runat="server" Text="购物车" CssClass="btn btn-info"  ValidateRequestMode="Disabled" UseSubmitBehavior="False" EnableViewState="False" />
+            <asp:PopupControlExtender ID="Button_car_PopupControlExtender" runat="server" TargetControlID="Button_car" Position="Bottom" popupcontrolid="Panel_shopping_car" OffsetX="-100">
+            </asp:PopupControlExtender>
+        </div>
+
         <div style="float: right; margin-top: 20px; margin-right: 5%;">
 
             <asp:TextBox ID="txb_serach" runat="server" Height="31px" Width="250px" placeholder="寻找美食~.~"></asp:TextBox>
             <asp:Button ID="btn_serach" runat="server" Text="搜索" CssClass="btn btn-primary" OnClick="btn_serach_Click" Style="margin-left: 10px;" />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           
         </div>
+
+
+
 
 
         <div>
@@ -112,3 +128,50 @@
         </div>
     </ContentTemplate>
 </asp:UpdatePanel>
+<asp:Panel ID="Panel_shopping_car" weight ="100px"  runat="server" OnLoad="Panel_shopping_car_Load">
+    <asp:UpdatePanel ID="UpdatePanel2" runat="server">
+        <ContentTemplate>
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <h3 class="panel-title">商品列表</h3>
+                </div>
+                <div class="auto-style15" >
+                  <asp:DataList ID="DataList_shopping_car" runat="server" DataKeyField="p_Id" OnItemCommand="DataList_shopping_car_ItemCommand" DataSourceID="LinqDataSource1">
+                    <ItemTemplate>
+                        <table class="table">
+                            <tr>
+                                <td>
+                                    <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl='<%# Bind("p_photo") %>' OnClick="ImageButton1_Click" CommandArgument='<%#Eval("p_id") %>' Width="60px" Height="60px" />
+                                </td>
+                                <td >
+                                    <asp:Label ID="Label1" runat="server" Text='<%# Bind("p_name") %>'></asp:Label>
+                                </td> 
+                                       
+                            </tr>
+                            <tr>                                  
+                                <td>
+                                   价格： <asp:Label ID="Label2" runat="server" Text='<%# Bind("p_price") %>'></asp:Label>
+                                </td>
+                                <td>
+                                   数量：<asp:Label ID="Label3" runat="server" Text='<%# Eval("p_num") %>'></asp:Label>
+                                &nbsp;</td>
+                            </tr>
+                        </table>
+                    </ItemTemplate>
+                </asp:DataList>
+                </div>
+            </div>
+            <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" TableName="cart_T" Where="b_account == @b_account">
+                <WhereParameters>
+                    <asp:SessionParameter Name="b_account" SessionField="UserAccount" Type="String" />
+                </WhereParameters>
+            </asp:LinqDataSource>
+            <asp:LinqDataSource ID="LinqDataSource2" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" Select="new (p_photo)" TableName="product_T">
+            </asp:LinqDataSource>
+            <br />
+
+        </ContentTemplate>
+    </asp:UpdatePanel>
+    <br />
+    <br />
+</asp:Panel>

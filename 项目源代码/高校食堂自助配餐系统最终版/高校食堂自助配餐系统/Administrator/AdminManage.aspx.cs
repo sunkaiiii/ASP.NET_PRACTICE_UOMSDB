@@ -50,5 +50,31 @@ namespace 高校食堂自助配餐系统.Administrator
             gv.DataSource = adminInterSevice.searchSOrderByOrderId(Int32.Parse(txtSearch.Text.Trim()));
             gv.DataBind();
         }
+
+        protected void searchFeedBack_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Trim().Length <= 0)
+            {
+                gv.DataSource = adminInterSevice.searhUserFeedBack(null);
+            }
+            else
+            {
+                gv.DataSource = adminInterSevice.searhUserFeedBack(txtSearch.Text.Trim());             
+            }
+            gv.DataBind();
+        }
+
+        protected void searchUserReport_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Trim().Length <= 0)
+            {
+                gv.DataSource = adminInterSevice.searchUserReport(null);
+            }
+            else
+            {
+                gv.DataSource = adminInterSevice.searchUserReport(txtSearch.Text.Trim());
+            }
+            gv.DataBind();
+        }
     }
 }

@@ -10,6 +10,10 @@
 namespace 高校食堂自助配餐系统.using_help.content {
     
     
+<<<<<<< HEAD
     public partial class about_us {
+=======
+    public partial class C_connect_us {
+>>>>>>> sunkai
     }
 }

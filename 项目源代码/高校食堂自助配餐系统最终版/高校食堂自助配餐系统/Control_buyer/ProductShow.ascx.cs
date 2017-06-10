@@ -10,6 +10,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+
 namespace 高校食堂自助配餐系统.Control_buyer
 {
     public partial class ProductShow : System.Web.UI.UserControl
@@ -129,8 +130,14 @@ namespace 高校食堂自助配餐系统.Control_buyer
                 Button b = sender as Button;
                 int id = int.Parse(b.CommandArgument);//获取button上面绑定的项目的主键值
                 buyDB.addProduct(Session["UserAccount"].ToString(), 1, id);//默认的是添加一个到购物车
+<<<<<<< HEAD
                 Response.Write(MessagesBox.showMessages("添加成功"));
+=======
+                DataList_shopping_car.DataBind();
+                Button_car.Focus();//模拟按键点击显示购物车
+>>>>>>> sunkai
             }
+            
         }
 
         protected void btn_serach_Click(object sender, EventArgs e)
@@ -171,6 +178,31 @@ namespace 高校食堂自助配餐系统.Control_buyer
         protected void LinkButton7_Click(object sender, EventArgs e)
         {
             Response.Redirect("default.aspx?category=" + LinkButton7.Text + "");
+        }
+
+        protected void Button_car_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_car_Disposed(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button_car_Click1(object sender, EventArgs e)
+        {
+          //  this.PopupControlExtender1.Commit(this.)
+        }
+
+        protected void DataList_shopping_car_ItemCommand(object source, DataListCommandEventArgs e)
+        {
+
+        }
+
+        protected void Panel_shopping_car_Load(object sender, EventArgs e)
+        {
+            Panel_shopping_car.DataBind();
         }
     }
 }

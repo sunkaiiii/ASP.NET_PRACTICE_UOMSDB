@@ -57,6 +57,7 @@
       <Column Name="p_name" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="p_price" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
       <Column Name="p_num" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="p_photo" Type="System.String" DbType="VarChar(200) NOT NULL" CanBeNull="false" />
     </Type>
   </Table>
   <Table Name="dbo.product_T" Member="product_T">
@@ -100,6 +101,21 @@
       <Column Name="s_answer" Type="System.String" DbType="VarChar(20) NOT NULL" CanBeNull="false" />
       <Column Name="s_state" Type="System.Boolean" DbType="Bit NOT NULL" CanBeNull="false" />
       <Column Name="s_profit" Type="System.Decimal" DbType="Money NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+  <Table Name="dbo.report_info" Member="report_info">
+    <Type Name="report_info">
+      <Column Name="Id" Type="System.int" DbType="int NOT NULL" IsPrimaryKey="true" CanBeNull="false"/>
+      <Column Name="s_account" Type="System.String" DbType="Varchar(20) NOT NULL" CanBeNull="false"/>
+      <Column Name="p_name" Type="System.String" DbType="Varchar(500) NOT NULL " CanBeNull="false"/>
+      <Column Name="report" Type="System.String" DbType="Varchar(500) NOT NULL" CanBeNull="false"/>
+    </Type>
+  </Table>
+  <Table Name="dbo.feedback" Member="feedback">
+    <Type Name="feedback">
+      <Column Name="id" Type="System.int" DbType="int NOT NULL" IsPrimaryKey="true" CanBeNull="false"/>
+      <Column Name="account" Type="System.String" DbType="varchar(20) NOT NULL" CanBeNull="false"/>
+      <Column Name="report" Type="System.String" DbType="varchar(500) NOT NULL" CanBeNull="false"/>
     </Type>
   </Table>
 </Database>

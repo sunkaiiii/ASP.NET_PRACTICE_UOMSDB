@@ -116,6 +116,7 @@ namespace DataAccess
             return true;
         }
 
+
         /// <summary>
         /// 根据账号查询用户是否已存在，在注册的时候验证输入的账号是否已被注册，已经被注册返回true，反之返回false
         /// </summary>
@@ -518,6 +519,32 @@ namespace DataAccess
             {
                 return false;
             }
+        }
+
+        /// <summary>
+        /// 反馈问题
+        /// </summary>
+        /// <param name="s_account"></param>
+        /// <returns></returns>
+        public bool sendReport(report_Entity repT)
+        {
+            report_T a = new report_T();
+            a.s_account = repT.s_account;
+            a.p_name = repT.p_name;
+            a.report = repT.report;
+            sellDB.report_T.InsertOnSubmit(a);
+            sellDB.SubmitChanges();
+            return true;
+        }
+
+        public bool sendFeedback(feedback_Entity feedT)
+        {
+            feedback_T a = new feedback_T();
+            a.account = feedT.account;
+            a.report = feedT.reportInfo;
+            sellDB.feedBack_T.InsertOnSubmit(a);
+            sellDB.SubmitChanges();
+            return true;
         }
     }
 }

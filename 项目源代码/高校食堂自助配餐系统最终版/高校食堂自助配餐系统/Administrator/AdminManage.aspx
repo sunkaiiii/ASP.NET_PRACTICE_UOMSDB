@@ -85,6 +85,16 @@
                                 <asp:Button ID="searchSOrder" runat="server" Text="卖家订单" OnClick="searchSOrder_Click" />
                             </td>
                         </tr>
+                         <tr>
+                            <td class="auto-style4" height="40px" style="text-align: center">
+                                <asp:Button ID="searchFeedBack" runat="server" Text="查看反馈" OnClick="searchFeedBack_Click"  />
+                            </td>
+                        </tr>
+                          <tr>
+                            <td class="auto-style4" height="40px" style="text-align: center">
+                                <asp:Button ID="searchUserReport" runat="server" Text="查看举报" OnClick="searchUserReport_Click" />
+                            </td>
+                        </tr>
                     </table>
                 </td>
                 <td valign="top" class="auto-style6">
