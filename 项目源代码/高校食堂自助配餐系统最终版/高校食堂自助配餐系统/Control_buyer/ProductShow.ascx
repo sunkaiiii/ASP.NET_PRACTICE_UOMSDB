@@ -128,7 +128,7 @@
         </div>
     </ContentTemplate>
 </asp:UpdatePanel>
-<asp:Panel ID="Panel_shopping_car" weight ="100px"  runat="server">
+<asp:Panel ID="Panel_shopping_car" weight ="100px"  runat="server" OnLoad="Panel_shopping_car_Load">
     <asp:UpdatePanel ID="UpdatePanel2" runat="server">
         <ContentTemplate>
             <div class="panel panel-primary">
@@ -156,36 +156,19 @@
                                    数量：<asp:Label ID="Label3" runat="server" Text='<%# Eval("p_num") %>'></asp:Label>
                                 &nbsp;</td>
                             </tr>
-
                         </table>
                     </ItemTemplate>
                 </asp:DataList>
                 </div>
             </div>
-
             <asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" TableName="cart_T" Where="b_account == @b_account">
                 <WhereParameters>
                     <asp:SessionParameter Name="b_account" SessionField="UserAccount" Type="String" />
                 </WhereParameters>
             </asp:LinqDataSource>
-
-
-
-
-
-
-
-
             <asp:LinqDataSource ID="LinqDataSource2" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" Select="new (p_photo)" TableName="product_T">
             </asp:LinqDataSource>
             <br />
-
-
-
-
-
-
-
 
         </ContentTemplate>
     </asp:UpdatePanel>

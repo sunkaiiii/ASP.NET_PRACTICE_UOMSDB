@@ -1,4 +1,5 @@
 ﻿using DataAccess;
+using Entity;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -8,6 +9,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
 
 namespace 高校食堂自助配餐系统.Control_buyer
 {
@@ -128,7 +130,10 @@ namespace 高校食堂自助配餐系统.Control_buyer
                 Button b = sender as Button;
                 int id = int.Parse(b.CommandArgument);//获取button上面绑定的项目的主键值
                 buyDB.addProduct(Session["UserAccount"].ToString(), 1, id);//默认的是添加一个到购物车
+                DataList_shopping_car.DataBind();
+                Button_car.Focus();//模拟按键点击显示购物车
             }
+            
         }
 
         protected void btn_serach_Click(object sender, EventArgs e)
@@ -189,6 +194,11 @@ namespace 高校食堂自助配餐系统.Control_buyer
         protected void DataList_shopping_car_ItemCommand(object source, DataListCommandEventArgs e)
         {
 
+        }
+
+        protected void Panel_shopping_car_Load(object sender, EventArgs e)
+        {
+            Panel_shopping_car.DataBind();
         }
     }
 }
