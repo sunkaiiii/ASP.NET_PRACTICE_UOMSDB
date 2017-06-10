@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="C_univers_problem.ascx.cs" Inherits="高校食堂自助配餐系统.using_help.content.about_us" %>
-<p>
-    univ</p>
-=======
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="C_univers_problem.ascx.cs" Inherits="高校食堂自助配餐系统.using_help.content.C_univers_problem" %>
 <p>
     1.不登录是否订餐？</p>
@@ -24,5 +19,4 @@
 <p>
     &nbsp;</p>
 
->>>>>>> sunkai
 

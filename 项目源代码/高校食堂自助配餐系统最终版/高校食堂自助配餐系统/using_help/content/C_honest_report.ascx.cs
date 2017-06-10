@@ -1,10 +1,6 @@
-<<<<<<< HEAD
-﻿using System;
-=======
 ﻿using DataAccess;
 using Entity;
 using System;
->>>>>>> sunkai
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -13,13 +9,6 @@ using System.Web.UI.WebControls;
 
 namespace 高校食堂自助配餐系统.using_help.content
 {
-<<<<<<< HEAD
-    public class C_honest_report : System.Web.UI.UserControl
-    {
-        protected void Page_Load(object sender, EventArgs e)
-        {
-
-=======
     public partial class C_honest_report : System.Web.UI.UserControl
     {
         DataTask data;
@@ -67,7 +56,6 @@ namespace 高校食堂自助配餐系统.using_help.content
                 Response.Write(MessagesBox.showMessages("您的反馈我们已经收到，我们会尽快处理！"));
                 Response.Write("<script language=javascript>history.go(-1);</script>");
             }
->>>>>>> sunkai
         }
     }
 }

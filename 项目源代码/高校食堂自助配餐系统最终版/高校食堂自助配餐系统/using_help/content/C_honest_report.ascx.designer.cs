@@ -10,9 +10,6 @@
 namespace 高校食堂自助配餐系统.using_help.content {
     
     
-<<<<<<< HEAD
-    public partial class about_us {
-=======
     public partial class C_honest_report {
         
         /// <summary>
@@ -68,6 +65,5 @@ namespace 高校食堂自助配餐系统.using_help.content {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button Button1;
->>>>>>> sunkai
     }
 }
