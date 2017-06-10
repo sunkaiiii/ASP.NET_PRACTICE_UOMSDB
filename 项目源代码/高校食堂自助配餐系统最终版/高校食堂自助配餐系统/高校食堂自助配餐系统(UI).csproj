@@ -59,7 +59,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="about_us.ascx" />
     <Content Include="Administrator\adminLogin.aspx" />
     <Content Include="Administrator\AdminManage.aspx" />
     <Content Include="buyer\evaluationOfProduct.aspx" />
@@ -190,14 +189,9 @@
     <Content Include="using_help\content\C_honest_report.ascx" />
     <Content Include="using_help\content\C_connect_us.ascx" />
     <Content Include="using_help\content\C_about_us.ascx" />
-<<<<<<< HEAD
-    <Content Include="using_help\honest_report.aspx" />
-    <Content Include="using_help\univers_proplem.aspx" />
-=======
     <Content Include="using_help\content\WebUserControl1.ascx" />
     <Content Include="using_help\honest_report.aspx" />
     <Content Include="using_help\univers_problem.aspx" />
->>>>>>> sunkai
     <Content Include="using_help\user_request.aspx" />
     <Content Include="菜品素材\半荤菜\农家小炒肉.jpg" />
     <Content Include="菜品素材\半荤菜\咸鱼茄子.jpg" />
@@ -347,13 +341,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="about_us.ascx.cs">
-      <DependentUpon>about_us.ascx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="about_us.ascx.designer.cs">
-      <DependentUpon>about_us.ascx</DependentUpon>
-    </Compile>
     <Compile Include="Administrator\adminLogin.aspx.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -786,8 +773,6 @@
     <Compile Include="using_help\content\C_about_us.ascx.designer.cs">
       <DependentUpon>C_about_us.ascx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
     <Compile Include="using_help\content\WebUserControl1.ascx.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -795,7 +780,6 @@
     <Compile Include="using_help\content\WebUserControl1.ascx.designer.cs">
       <DependentUpon>WebUserControl1.ascx</DependentUpon>
     </Compile>
->>>>>>> sunkai
     <Compile Include="using_help\honest_report.aspx.cs">
       <DependentUpon>honest_report.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -803,21 +787,12 @@
     <Compile Include="using_help\honest_report.aspx.designer.cs">
       <DependentUpon>honest_report.aspx</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="using_help\univers_proplem.aspx.cs">
-      <DependentUpon>univers_proplem.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="using_help\univers_proplem.aspx.designer.cs">
-      <DependentUpon>univers_proplem.aspx</DependentUpon>
-=======
     <Compile Include="using_help\univers_problem.aspx.cs">
       <DependentUpon>univers_problem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="using_help\univers_problem.aspx.designer.cs">
       <DependentUpon>univers_problem.aspx</DependentUpon>
->>>>>>> sunkai
     </Compile>
     <Compile Include="using_help\user_request.aspx.cs">
       <DependentUpon>user_request.aspx</DependentUpon>

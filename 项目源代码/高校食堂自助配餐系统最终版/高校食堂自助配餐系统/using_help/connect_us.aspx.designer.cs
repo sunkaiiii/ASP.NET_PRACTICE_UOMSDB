@@ -11,8 +11,6 @@ namespace 高校食堂自助配餐系统.seller {
     
     
     public partial class login {
-<<<<<<< HEAD
-=======
         
         /// <summary>
         /// u_connect_us 控件。
@@ -22,6 +20,5 @@ namespace 高校食堂自助配餐系统.seller {
         /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
         /// </remarks>
         protected global::高校食堂自助配餐系统.using_help.content.C_connect_us u_connect_us;
->>>>>>> sunkai
     }
 }

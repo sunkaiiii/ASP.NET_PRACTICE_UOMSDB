@@ -130,12 +130,9 @@ namespace 高校食堂自助配餐系统.Control_buyer
                 Button b = sender as Button;
                 int id = int.Parse(b.CommandArgument);//获取button上面绑定的项目的主键值
                 buyDB.addProduct(Session["UserAccount"].ToString(), 1, id);//默认的是添加一个到购物车
-<<<<<<< HEAD
                 Response.Write(MessagesBox.showMessages("添加成功"));
-=======
                 DataList_shopping_car.DataBind();
                 Button_car.Focus();//模拟按键点击显示购物车
->>>>>>> sunkai
             }
             
         }
