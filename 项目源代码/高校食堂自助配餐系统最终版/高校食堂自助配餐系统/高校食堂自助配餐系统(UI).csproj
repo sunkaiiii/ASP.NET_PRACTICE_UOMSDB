@@ -59,8 +59,38 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Administrator\admin.aspx" />
     <Content Include="Administrator\adminLogin.aspx" />
     <Content Include="Administrator\AdminManage.aspx" />
+    <Content Include="bin\AjaxControlToolkit.dll" />
+    <Content Include="bin\AjaxControlToolkit.pdb" />
+    <Content Include="bin\ar\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\cs\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\DataAccess.dll" />
+    <Content Include="bin\DataAccess.dll.config" />
+    <Content Include="bin\DataAccess.pdb" />
+    <Content Include="bin\de\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\Entity.dll" />
+    <Content Include="bin\Entity.pdb" />
+    <Content Include="bin\es\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\fr\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\he\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\hi\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\InterService.dll" />
+    <Content Include="bin\InterService.dll.config" />
+    <Content Include="bin\InterService.pdb" />
+    <Content Include="bin\it\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ja\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ko\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\nl\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\pt\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\ru\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\tr-TR\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHS\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\zh-CHT\AjaxControlToolkit.resources.dll" />
+    <Content Include="bin\高校食堂自助配餐系统.dll" />
+    <Content Include="bin\高校食堂自助配餐系统.dll.config" />
+    <Content Include="bin\高校食堂自助配餐系统.pdb" />
     <Content Include="bootstrap\css\bootstrap-theme.css" />
     <Content Include="bootstrap\css\bootstrap-theme.min.css" />
     <Content Include="bootstrap\css\bootstrap.css" />
@@ -69,11 +99,31 @@
     <Content Include="bootstrap\js\bootstrap.js" />
     <Content Include="bootstrap\js\bootstrap.min.js" />
     <Content Include="bootstrap\js\npm.js" />
+    <Content Include="buyer\Default.aspx" />
     <Content Include="buyer\evaluationOfProduct.aspx" />
     <Content Include="buyer\Modify.aspx" />
     <Content Include="buyer\pageOfEvaluation.aspx" />
     <Content Include="buyer\readme.txt" />
+    <Content Include="Control_admin\Buyer_search.ascx" />
+    <Content Include="Control_admin\Delete_user.ascx" />
+    <Content Include="Control_admin\freeze.ascx" />
+    <Content Include="Control_admin\README.txt" />
+    <Content Include="Control_admin\seller_search.ascx" />
+    <Content Include="Control_admin\unfreeze.ascx" />
+    <Content Include="control_buyer\Add_goods.ascx" />
+    <Content Include="control_buyer\Classification_search.ascx" />
+    <Content Include="control_buyer\Commodity_search.ascx" />
     <Content Include="control_buyer\C_search_state.ascx" />
+    <Content Include="control_buyer\login.ascx" />
+    <Content Include="control_buyer\Modify.ascx" />
+    <Content Include="control_buyer\Number_query.ascx" />
+    <Content Include="control_buyer\Paymen_order.ascx" />
+    <Content Include="control_buyer\README.TXT" />
+    <Content Include="control_buyer\register.ascx" />
+    <Content Include="control_buyer\Retrieve_pwd.ascx" />
+    <Content Include="control_buyer\searchProducts.ascx" />
+    <Content Include="control_buyer\Submit_orders.ascx" />
+    <Content Include="control_buyer\Updatepassword.ascx" />
     <Content Include="Control_seller\C_SellingPro.ascx" />
     <Content Include="Control_seller\C_Retrieve_pwd.ascx" />
     <Content Include="images\11\干锅鸡.jpg" />
@@ -252,6 +302,7 @@
     <Content Include="js\jquery.banner.revolution.min.js" />
     <Content Include="Logout.aspx" />
     <Content Include="ProductDetail.aspx" />
+    <Content Include="R_ShoppingCar.ascx" />
     <Content Include="seller\Information.aspx" />
     <Content Include="seller\SellingPro.aspx" />
     <Content Include="seller\Timerprofit.aspx" />
@@ -362,6 +413,7 @@
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="packages.config" />
     <None Include="Properties\PublishProfiles\1.pubxml" />
     <None Include="Scripts\jquery-3.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -415,6 +467,13 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Administrator\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Administrator\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Administrator\adminLogin.aspx.cs">
       <DependentUpon>adminLogin.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -428,6 +487,10 @@
     </Compile>
     <Compile Include="Administrator\AdminManage.aspx.designer.cs">
       <DependentUpon>AdminManage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="buyer\Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="buyer\evaluationOfProduct.aspx.cs">
       <DependentUpon>evaluationOfProduct.aspx</DependentUpon>
@@ -450,12 +513,125 @@
     <Compile Include="buyer\pageOfEvaluation.aspx.designer.cs">
       <DependentUpon>pageOfEvaluation.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Control_admin\Buyer_search.ascx.cs">
+      <DependentUpon>Buyer_search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control_admin\Buyer_search.ascx.designer.cs">
+      <DependentUpon>Buyer_search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control_admin\Delete_user.ascx.cs">
+      <DependentUpon>Delete_user.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control_admin\Delete_user.ascx.designer.cs">
+      <DependentUpon>Delete_user.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control_admin\freeze.ascx.cs">
+      <DependentUpon>freeze.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control_admin\freeze.ascx.designer.cs">
+      <DependentUpon>freeze.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control_admin\seller_search.ascx.cs">
+      <DependentUpon>seller_search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control_admin\seller_search.ascx.designer.cs">
+      <DependentUpon>seller_search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Control_admin\unfreeze.ascx.cs">
+      <DependentUpon>unfreeze.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Control_admin\unfreeze.ascx.designer.cs">
+      <DependentUpon>unfreeze.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Add_goods.ascx.cs">
+      <DependentUpon>Add_goods.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Add_goods.ascx.designer.cs">
+      <DependentUpon>Add_goods.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Classification_search.ascx.cs">
+      <DependentUpon>Classification_search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Classification_search.ascx.designer.cs">
+      <DependentUpon>Classification_search.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Commodity_search.ascx.cs">
+      <DependentUpon>Commodity_search.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Commodity_search.ascx.designer.cs">
+      <DependentUpon>Commodity_search.ascx</DependentUpon>
+    </Compile>
     <Compile Include="control_buyer\C_search_state.ascx.cs">
       <DependentUpon>C_search_state.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="control_buyer\C_search_state.ascx.designer.cs">
       <DependentUpon>C_search_state.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\login.ascx.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\login.ascx.designer.cs">
+      <DependentUpon>login.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Modify.ascx.cs">
+      <DependentUpon>Modify.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Modify.ascx.designer.cs">
+      <DependentUpon>Modify.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Number_query.ascx.cs">
+      <DependentUpon>Number_query.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Number_query.ascx.designer.cs">
+      <DependentUpon>Number_query.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Paymen_order.ascx.cs">
+      <DependentUpon>Paymen_order.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Paymen_order.ascx.designer.cs">
+      <DependentUpon>Paymen_order.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\register.ascx.cs">
+      <DependentUpon>register.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\register.ascx.designer.cs">
+      <DependentUpon>register.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Retrieve_pwd.ascx.cs">
+      <DependentUpon>Retrieve_pwd.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Retrieve_pwd.ascx.designer.cs">
+      <DependentUpon>Retrieve_pwd.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\searchProducts.ascx.cs">
+      <DependentUpon>searchProducts.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Submit_orders.ascx.cs">
+      <DependentUpon>Submit_orders.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="control_buyer\Submit_orders.ascx.designer.cs">
+      <DependentUpon>Submit_orders.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="control_buyer\Updatepassword.ascx.cs">
+      <DependentUpon>Updatepassword.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Control_seller\C_SellingPro.ascx.cs">
       <DependentUpon>C_SellingPro.ascx</DependentUpon>
@@ -728,6 +904,13 @@
       <DependentUpon>ProductDetail.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="R_ShoppingCar.ascx.cs">
+      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="R_ShoppingCar.ascx.designer.cs">
+      <DependentUpon>R_ShoppingCar.ascx</DependentUpon>
+    </Compile>
     <Compile Include="seller\Add_goods.aspx.cs">
       <DependentUpon>Add_goods.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
