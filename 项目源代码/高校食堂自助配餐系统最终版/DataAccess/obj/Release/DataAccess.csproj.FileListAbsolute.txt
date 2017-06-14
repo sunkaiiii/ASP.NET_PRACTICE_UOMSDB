@@ -6,3 +6,11 @@ D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校�
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.dll
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\bin\DataAccess.dll.config
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\bin\DataAccess.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\bin\DataAccess.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\bin\Entity.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\bin\Entity.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.csprojResolveAssemblyReference.cache
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\DataAccess\obj\Release\DataAccess.pdb

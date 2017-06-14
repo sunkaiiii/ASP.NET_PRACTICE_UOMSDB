@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="_Default" %>
 
 <%@ Register Src="~/C_LoginStatus.ascx" TagPrefix="uc1" TagName="C_LoginStatus" %>
 <%@ Register Src="~/control_buyer/ProductShow.ascx" TagPrefix="uc1" TagName="ProductShow" %>

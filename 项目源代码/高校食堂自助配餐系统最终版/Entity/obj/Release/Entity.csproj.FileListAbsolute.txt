@@ -3,3 +3,8 @@ D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校�
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.dll
 D:\文件与资料\文档\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\bin\Entity.pdb
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.csprojResolveAssemblyReference.cache
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\Entity\obj\Release\Entity.pdb
