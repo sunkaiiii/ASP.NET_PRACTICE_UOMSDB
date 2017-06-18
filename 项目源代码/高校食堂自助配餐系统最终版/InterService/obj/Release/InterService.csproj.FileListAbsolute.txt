@@ -19,3 +19,14 @@ D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.csprojResolveAssemblyReference.cache
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.dll
 D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.pdb
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\InterService.dll.config
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\InterService.dll
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\InterService.pdb
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\DataAccess.dll
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\Entity.dll
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\DataAccess.pdb
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\DataAccess.dll.config
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\Entity.pdb
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.csprojResolveAssemblyReference.cache
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.dll
+C:\Users\70472\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Release\InterService.pdb

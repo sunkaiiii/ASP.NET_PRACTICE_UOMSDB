@@ -99,7 +99,7 @@
                 </asp:DataList>
             </p>
 
-            <div style="position: absolute; bottom: 0px;">
+            <div style="position: absolute; bottom: -8px;">
                 <p class="text-center">
                     <asp:LinkButton ID="上一页" runat="server" CommandName="上一页" OnClick="上一页_Click" CssClass="MakeLinkCenter">上一页</asp:LinkButton>
 
@@ -111,7 +111,7 @@
                 </p>
 
 
-                <ul class="nav nav-tabs nav-justified" style="margin-top: 60px;">
+                <ul class="nav nav-tabs nav-justified" style="margin-top: 20px;">
                     <li>
                         <h4>当前页:<asp:Label ID="CurrentPageCount" runat="server"></asp:Label></h4>
                     </li>
