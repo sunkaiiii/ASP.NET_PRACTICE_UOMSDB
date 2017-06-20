@@ -40,6 +40,15 @@ namespace 高校食堂自助配餐系统 {
         protected global::System.Web.UI.WebControls.DataList DataList_shopping_car;
         
         /// <summary>
+        /// R_ShoppingCar1 控件。
+        /// </summary>
+        /// <remarks>
+        /// 自动生成的字段。
+        /// 若要进行修改，请将字段声明从设计器文件移到代码隐藏文件。
+        /// </remarks>
+        protected global::高校食堂自助配餐系统.R_ShoppingCar R_ShoppingCar1;
+        
+        /// <summary>
         /// LinqDataSource1 控件。
         /// </summary>
         /// <remarks>

@@ -34,7 +34,11 @@
             <ul class="nav nav-tabs nav-justified">
 
                 <li>
-                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">半荤菜</asp:LinkButton></li>
+                    <asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton8_Click">所有</asp:LinkButton>
+                </li>
+                <li>
+                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">半荤菜</asp:LinkButton>
+                </li>
                 <li>
                     <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">荤菜</asp:LinkButton></li>
                 <li>

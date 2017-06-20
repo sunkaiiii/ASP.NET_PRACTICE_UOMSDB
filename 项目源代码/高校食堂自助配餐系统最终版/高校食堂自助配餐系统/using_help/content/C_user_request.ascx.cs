@@ -14,7 +14,7 @@ namespace 高校食堂自助配餐系统.using_help.content
         DataTask data;
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtFeedBack.Text = "";
+           // txtFeedBack.Text = "";
             if (Session["UserAccount"] == null)
             {
                 Response.Redirect("../login.aspx");
@@ -25,7 +25,7 @@ namespace 高校食堂自助配餐系统.using_help.content
 
         protected void btnSendFeedBack_Click(object sender, EventArgs e)
         {
-            if (txtFeedBack.Text.Length <= 0)
+            if (txtFeedBack.Text.Trim().Length <= 0)
             {
                 Response.Write(MessagesBox.showMessages("内容不能为空"));
                 return;

@@ -21,12 +21,9 @@
                 </div>
                 <div style="height: 42px; float: right; width: 200px; margin-right:3%;">
                         <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
-                        </asp:ContentPlaceHolder>
-                    
+                        </asp:ContentPlaceHolder>                    
                 </div>
-            </div>
-
-            
+            </div>            
             <!--主题部分-->
             <div class="Main" style="height:750px;">
                 <div class="Navfooter">
@@ -38,8 +35,6 @@
                     </asp:ContentPlaceHolder>
                 </div>
             </div>
-
-
             <!--footer-->
             <div class="panel-footer">
                 <p class="text-center">

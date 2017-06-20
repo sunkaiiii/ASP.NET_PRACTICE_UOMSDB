@@ -20,7 +20,7 @@ namespace 高校食堂自助配餐系统.Control_seller
 
         protected void btn_Sumbit_Click(object sender, EventArgs e)
         {
-            if (Session["UserType"] == "1")
+            if (Session["UserType"].ToString() == "1")
             {
                 Label1.Text = sell.show(txtSell_Account.Text.Trim());
                 Response.Write("账号验证成功，请回答密码问题！");
@@ -33,7 +33,7 @@ namespace 高校食堂自助配餐系统.Control_seller
 
         protected void btn_Ensure_Click(object sender, EventArgs e)
         {
-             if(Session["UserType"] == "1")
+             if(Session["UserType"].ToString() == "1")
              {
                  if (sell.check(txtSell_Account.Text, Label1.Text, txtSell_Answer.Text))
                  {

@@ -1,5 +1,7 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="R_ShoppingCar.ascx.cs" Inherits="高校食堂自助配餐系统.R_ShoppingCar" %>
 
+ <%@ Register src="R_ShoppingCar.ascx" tagname="R_ShoppingCar" tagprefix="uc1" %>
+
  <link href="bootstrap/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 
 <asp:Panel ID="Panel_shopping_car" weight ="100px"  runat="server">
@@ -30,6 +32,7 @@
                         </table>
                     </ItemTemplate>
                 </asp:DataList>
+                    <uc1:R_ShoppingCar ID="R_ShoppingCar1" runat="server" />
                 </div>
             </div>
 

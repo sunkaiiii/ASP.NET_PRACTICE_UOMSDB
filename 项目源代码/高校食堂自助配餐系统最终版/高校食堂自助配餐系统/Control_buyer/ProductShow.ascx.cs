@@ -176,6 +176,11 @@ namespace 高校食堂自助配餐系统.Control_buyer
             Response.Redirect("default.aspx?category=" + LinkButton7.Text + "");
         }
 
+        protected void LinkButton8_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("default.aspx");
+        }
+
         protected void Button_car_Click(object sender, EventArgs e)
         {
 
@@ -200,5 +205,7 @@ namespace 高校食堂自助配餐系统.Control_buyer
         {
             Panel_shopping_car.DataBind();
         }
+
+
     }
 }

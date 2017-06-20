@@ -51,7 +51,10 @@
 </asp:Repeater>
 
 
-<asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" Select="new (p_Id, p_evaluate)" TableName="b_evaluate_T">
+<asp:LinqDataSource ID="LinqDataSource1" runat="server" ContextTypeName="DataAccess.UOMSDBDataContext" EntityTypeName="" Select="new (p_Id, p_evaluate)" TableName="b_evaluate_T" Where="p_Id == @p_Id">
+    <WhereParameters>
+        <asp:QueryStringParameter Name="p_Id" QueryStringField="id" Type="Int32" />
+    </WhereParameters>
 </asp:LinqDataSource>
 
 

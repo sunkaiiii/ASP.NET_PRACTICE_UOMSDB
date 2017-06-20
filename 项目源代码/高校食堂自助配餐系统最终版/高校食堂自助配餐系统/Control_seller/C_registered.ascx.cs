@@ -32,7 +32,7 @@ namespace 高校食堂自助配餐系统.Control_seller
                 Session["UserAccount"] = a.S_account.Trim();
                 Session["UserPassword"] = a.S_password.Trim();
                 Session["Logged"] = true;
-                Session["UserType"] = "0";
+                Session["UserType"] = "1";
                 db.create(a);
                 Response.Write(MessagesBox.showMessages("注册成功"));
                 System.Web.Security.FormsAuthentication.RedirectFromLoginPage(a.S_account, true);
