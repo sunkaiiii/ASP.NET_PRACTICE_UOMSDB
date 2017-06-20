@@ -101,7 +101,7 @@ namespace 高校食堂自助配餐系统.control_buyer
                             b_order_item.P_price = double.Parse(gv.Rows[i].Cells[6].Text);
                             TextBox txtNum = (TextBox)gv.Rows[i].FindControl("txtNum");
                             b_order_item.P_num = int.Parse(txtNum.Text);
-                            buyer.AddOrderItem(b_order_item.B_o_id, b_order_item.P_id, b_order_item.P_price, b_order_item.P_num);
+                            //buyer.AddOrderItem(b_order_item.B_o_id, b_order_item.P_id, b_order_item.P_price, b_order_item.P_num);
 
                             //向买家订单状态表插数据
                             b_order_state = new b_order_state_Entity();
@@ -115,7 +115,7 @@ namespace 高校食堂自助配餐系统.control_buyer
                             {
                                 b_order_state.B_o_state = "未支付";
                             }
-                            buyer.AddOrderState(b_order_state.B_o_id, b_order_state.B_o_state);
+                            //buyer.AddOrderState(b_order_state.B_o_id, b_order_state.B_o_state);
                             buyer.DeleteFromCart(Session["UserAccount"].ToString().Trim(), int.Parse(gv.Rows[i].Cells[4].Text));
                         }
                     }

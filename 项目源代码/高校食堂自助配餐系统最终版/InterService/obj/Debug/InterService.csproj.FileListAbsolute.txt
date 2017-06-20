@@ -294,3 +294,5 @@ C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_618\项目源代码\高�
 C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_618\项目源代码\高校食堂自助配餐系统最终版\InterService\obj\Debug\InterService.pdb
 C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_618\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\AjaxControlToolkit.dll
 C:\Users\15624\Documents\GitHub\ASP.NET_PRACTICE_UOMSDB_618\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\Entity.dll.config
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\AjaxControlToolkit.dll
+D:\Document\GitHub\ASP.NET_PRACTICE_UOMSDB\项目源代码\高校食堂自助配餐系统最终版\InterService\bin\Entity.dll.config
